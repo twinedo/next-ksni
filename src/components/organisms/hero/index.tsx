@@ -12,7 +12,7 @@ function Hero(props: THero) {
   return (
     <div>
         <div className="w-full p-8 flex items-center justify-between shadow-xl rounded-xl bg-gradient-to-b from-blue-300 to-white">
-          <div className="flex flex-1 flex-col gap-3">
+          <div className="flex flex-1 p-5 lg:p-20 flex-col gap-3">
             <div className='flex flex-1 flex-col'>
               <div className="text-5xl font-bold text-black">
                 Welcome, <br />
@@ -34,7 +34,7 @@ function Hero(props: THero) {
                 </Link>
             </div>
           </div>
-          <div className="flex flex-1">
+          <div className="hidden md:flex md:flex-1 ">
             <Image
               // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
               src="/assets/building.png"

@@ -53,7 +53,7 @@ function Products() {
         {products &&
           products.map((o: TProduct) => (
             <div
-              className="cursor-pointer relative flex flex-1 flex-col  gap-2"
+              className="cursor-pointer relative flex flex-1 flex-col flex-wrap gap-2"
               key={o.id}
               onClick={() => {
                 onSelectProduct(o);
@@ -68,7 +68,7 @@ function Products() {
                 alt={o.name}
                 className="rounded-xl hover:shadow-xl"
               />
-              <div className="text-black font-semibold flex flex-1 truncate">
+              <div className="text-black font-semibold line-clamp-2">
                 {o.name}
               </div>
             </div>
