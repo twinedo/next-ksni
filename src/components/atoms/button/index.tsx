@@ -7,7 +7,7 @@ type TButton = {
 function Button(props: TButton) {
     const {text, onClick}= props;
   return (
-    <div className='cursor-pointer p-3 rounded-full shadow-md place-items-center bg-red-500' onClick={onClick}>{text}</div>
+    <div className='cursor-pointer p-3 rounded-full shadow-md place-items-center bg-red-500 text-white' onClick={onClick}>{text}</div>
   )
 }
 

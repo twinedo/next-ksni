@@ -1,7 +1,6 @@
 'use client';
-import Image from 'next/image';
-import Button from './components/button';
-import Link from 'next/link';
+import Hero from '../components/organisms/hero';
+import Products from '@/components/organisms/products';
 
 export default function Home() {
 
@@ -16,43 +15,10 @@ export default function Home() {
         <div className="w-full mb-2 text-2xl font-bold text-[#090909]">
           KSNI/tw
         </div>
-        <div className="w-full p-8 flex items-center justify-between shadow-xl rounded-xl bg-gradient-to-b from-blue-300 to-white">
-          <div className="flex flex-1 flex-col gap-3">
-            <div className='flex flex-1 flex-col'>
-              <div className="text-5xl font-bold text-black">
-                Welcome, <br />
-                Let's rock with us
-              </div>
-              <div className="w-full h-0.5 my-4 bg-black" />
-              <div className="text-xl font-thin text-black text-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris{' '}
-              </div>
-            </div>
-            <div className='flex flex-1'>
-              <Link href="#products">
-              <Button
-                text="Check this out"
-                className="my-3"
-                onClick={() => gotoProducts("#products")}
-                />
-                </Link>
-            </div>
-          </div>
-          <div className="flex flex-1">
-            <Image
-              // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-              src="/assets/building.png"
-              alt="Next.js Logo"
-              width={480}
-              height={360}
-              priority
-            />
-          </div>
-        </div>
+        <Hero onButtonClick={() => gotoProducts("#products")} />
       </div>
       <div id="#products">
+        <Products />
         <div>Test product here aowndawnd andkaw dkandjn</div>
         <div>Test product here aowndawnd andkaw dkandjn</div>
         <div>Test product here aowndawnd andkaw dkandjn</div>
