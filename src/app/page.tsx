@@ -15,20 +15,16 @@ export default function Home() {
         <div className="w-full mb-2 text-2xl font-bold text-[#090909]">
           KSNI/tw
         </div>
-        <Hero onButtonClick={() => gotoProducts("#products")} />
+        <Hero onButtonClick={() => gotoProducts('#products')} />
       </div>
-      <div id="#products">
-        <Products />
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
-        <div>Test product here aowndawnd andkaw dkandjn</div>
+      <div id="#products" className="w-full p-20 bg-[#F6F6F6] flex flex-col place-items-center gap-4 justify-center">
+        <div className='text-black underline text-2xl font-bold text-left'>
+          Our Products
+        </div>
+        <div className="z-10 w-full max-w-5xl flex flex-col place-items-center items-center justify-center">
+          <Products />
+        </div>
       </div>
-
-     
     </main>
   );
 }
