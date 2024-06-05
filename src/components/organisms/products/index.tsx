@@ -1,7 +1,7 @@
 'use client';
 import Modal from '@/components/molecules/modal';
 import {getListProductImage, getListProductName} from '@/services/api';
-import {TProduct, TProductResponse} from '@/utils/types/products';
+import {TProduct} from '@/utils/types/products';
 import Image from 'next/image';
 import React, {useEffect, useState} from 'react';
 
