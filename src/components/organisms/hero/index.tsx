@@ -16,7 +16,7 @@ function Hero(props: THero) {
             <div className='flex flex-1 flex-col'>
               <div className="text-5xl font-bold text-black">
                 Welcome, <br />
-                Let's rock with us
+                Let`s rock with us
               </div>
               <div className="w-full h-0.5 my-4 bg-black" />
               <div className="text-xl font-thin text-black text-italic">
